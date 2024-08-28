@@ -1,25 +1,11 @@
 import React,{useEffect} from "react";
 import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+
 import { projectHero } from "../assets/projectHero";
 const Projects = () => {
-   const controls = useAnimation();
-  const { ref, inView } = useInView();
 
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
   return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={controls}
-      variants={{
-        hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-      }}
+    <div
       className="mt-[20vh] h-[200vh] text-white"
     >
       <h1 className="mb-20 text-center text-3xl font-light lg:text-4xl">
@@ -53,7 +39,7 @@ const Projects = () => {
           </a>
         );
       })}
-    </motion.div>
+    </div>
   );
 };
 
