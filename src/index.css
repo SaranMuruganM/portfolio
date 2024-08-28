@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  min-height: 100vh;
+}
+@layer base{
+
+  :root {
+    height: 100%;
+    font-family: "Inter", sans-serif;
+  }
+
+  body{
+
+    min-height: 100vh;
+  }
+}
+
+@layer components{
+  #root{
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  .border-styling{
+   border-style: solid;
+   border-width: 10px;
+   border-image:linear-gradient(to right, #f9a8d4, #d8a0d0, #b797c7, #998eb9, #7f84a7, #747faa, #687aac, #5976af, #5b74c8, #6a70dd, #8566ed, #a855f7) 1;
+   
+  }
+  .tech-stack-styling{
+  border-style: solid;
+  border-width: 2px;
+  border-image:linear-gradient(to bottom right,transparent,#402096)1;
+   
+}
+ .tech-stack-styling-inverse{
+  border-style: solid;
+  border-width: 2px;
+  border-image:linear-gradient(to bottom left,transparent,#402096)1;
+   
+}
+.text-gradient-decor{
+  @apply bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text
+}
+}
+

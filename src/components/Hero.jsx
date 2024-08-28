@@ -1,0 +1,44 @@
+import React from "react";
+import HeroAbout from "./HeroAbout";
+import { motion } from "framer-motion";
+const Hero = () => {
+  return (
+    <div className="lg:grid lg:grid-cols-2 text-white lg:mt-0 h-screen place-items-center  mt-16">
+      <div>
+        <motion.h1
+          animate={{ x: 0, opacity: 1 }}
+          initial={{ x: -100, opacity: 0 }}
+          transition={{ type: "tween", duration: 0.5 }}
+          className="md:pb-14 text-6xl font-thin tracking-tight  lg:text-8xl pb-6"
+        >
+          Saran M
+        </motion.h1>
+        <motion.div
+          animate={{ y: 0, opacity: 1 }}
+          initial={{ y: 100, opacity: 0 }}
+          transition={{ type: "tween", duration: 0.5, delay: 0.5 }}
+          className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-transparent text-4xl tracking-tight "
+        >
+          Full Stack Developer
+        </motion.div>
+      </div>
+      <div>
+        <motion.div
+          animate={{ y: 0, opacity: 1 }}
+          initial={{ y: -100, opacity: 0 }}
+          transition={{ type: "tween", duration: 0.5, delay: 0.5 }}
+          className=" lg:text-4xl text-3xl tracking-wider pl-3 font-light mt-16"
+        >
+          ABOUT ME
+        </motion.div>
+        <HeroAbout aname={"Fresher"} />
+        <HeroAbout aname={"MERN Stack"} />
+        <HeroAbout aname={" 3 - Frontend Projects"} />
+        <HeroAbout aname={"1 - Full Stack Project"} />
+        <HeroAbout aname={"Built REST API's"} />
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
