@@ -2,37 +2,36 @@ import React from "react";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import TechStack from "./components/TechStack";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 import Projects from "./components/Projects";
+import cpu from "./assets/cpuformatted.png";
+
 const App = () => {
   return (
-    <>
-      <div className="fixed h-svh w-full -z-10 flex items-center justify-center">
-        <div className="absolute inset-0 -z-10 h-[100vh] w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
+    <div className="bg-black grid">
+      <div className="fixed min-h-dvh min-w-[100vw] flex items-center justify-center z-0" >
 
-        </div>
-        <motion.img
-          initial={{ y: 8 }}
-          animate={{ y: -8 }}
-          transition={{
-            repeat: Infinity,
-            repeatType: "reverse",
-            duration: 2,
-            ease: "linear",
-          }}
-          src="./src/assets/cpu.png"
-          alt="cpu"
-          className="-z-0 absolute"
+      <motion.img
+        initial={{ y: 8 }}
+        animate={{ y: -8 }}
+        transition={{
+          repeat: Infinity,
+          repeatType: "reverse",
+          duration: 2,
+          ease: "linear",
+        }}
+        src={cpu}
+        alt="Animated CPU graphic"  
+        className="-z-2"
         />
-   
-      </div>
-      <div className="container mx-auto px-8 min-h-[100vh]">
+        </div>
+      <div className="container z-10 mx-auto min-h-[100vh] md:px-8 px-4">
         <NavBar />
         <Hero />
         <TechStack />
-        <Projects/>
+        <Projects />
       </div>
-    </>
+    </div>
   );
 };
 

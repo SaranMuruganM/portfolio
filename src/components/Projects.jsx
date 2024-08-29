@@ -6,7 +6,7 @@ const Projects = () => {
 
   return (
     <div
-      className="mt-[20vh] h-[200vh] text-white"
+      className="mt-[20vh] h-[200vh] text-white px-2"
     >
       <h1 className="mb-20 text-center text-3xl font-light lg:text-4xl">
         Projects
@@ -17,7 +17,7 @@ const Projects = () => {
             key={project.id}
             href={project.url}
             target={"_blank"}
-            className="tech-stack-styling mt-10 grid gap-8 border-2 p-4 text-sm text-white backdrop-blur-md md:grid-cols-2 md:text-lg"
+            className="tech-stack-styling mt-10 grid gap-8 border-2 p-4 text-sm text-white backdrop-blur-lg md:grid-cols-2 md:text-lg"
           >
             <img src={project.img} alt="img" className="h-full w-full" />
             <div className="grid gap-4">
@@ -29,7 +29,7 @@ const Projects = () => {
                 {project.techStack.map((tech) => (
                   <h1
                     key={project.name}
-                    className="tech-stack-styling-inverse border-2 px-4 py-1 text-xs font-light md:border-4 md:text-lg"
+                    className="tech-stack-styling-inverse border-2 px-4 py-1 text-xs font-light md:border-2 md:text-lg"
                   >
                     {tech}
                   </h1>

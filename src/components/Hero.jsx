@@ -27,7 +27,7 @@ const Hero = () => {
           animate={{ y: 0, opacity: 1 }}
           initial={{ y: -100, opacity: 0 }}
           transition={{ type: "tween", duration: 0.5, delay: 0.5 }}
-          className=" lg:text-3xl text-2xl tracking-wider pl-3 font-light mt-16"
+          className=" lg:text-3xl text-2xl tracking-wider  font-light mt-16"
         >
           ABOUT ME
         </motion.div>
