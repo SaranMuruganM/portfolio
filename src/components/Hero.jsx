@@ -3,13 +3,13 @@ import HeroAbout from "./HeroAbout";
 import { motion } from "framer-motion";
 const Hero = () => {
   return (
-    <div className="lg:grid lg:grid-cols-2 text-white lg:mt-0 h-screen place-items-center  mt-16">
+    <div className="lg:grid lg:grid-cols-2 text-white lg:-mt-20 h-screen mt-16 place-items-center">
       <div>
         <motion.h1
           animate={{ x: 0, opacity: 1 }}
           initial={{ x: -100, opacity: 0 }}
           transition={{ type: "tween", duration: 0.5 }}
-          className="md:pb-14 text-6xl font-thin tracking-tight  lg:text-8xl pb-6"
+          className="md:pb-14 text-5xl font-thin tracking-tight  lg:text-8xl pb-6 place"
         >
           Saran M
         </motion.h1>
@@ -17,7 +17,7 @@ const Hero = () => {
           animate={{ y: 0, opacity: 1 }}
           initial={{ y: 100, opacity: 0 }}
           transition={{ type: "tween", duration: 0.5, delay: 0.5 }}
-          className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-transparent text-4xl tracking-tight "
+          className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-transparent text-3xl tracking-tight "
         >
           Full Stack Developer
         </motion.div>
@@ -27,7 +27,7 @@ const Hero = () => {
           animate={{ y: 0, opacity: 1 }}
           initial={{ y: -100, opacity: 0 }}
           transition={{ type: "tween", duration: 0.5, delay: 0.5 }}
-          className=" lg:text-4xl text-3xl tracking-wider pl-3 font-light mt-16"
+          className=" lg:text-3xl text-2xl tracking-wider pl-3 font-light mt-16"
         >
           ABOUT ME
         </motion.div>
