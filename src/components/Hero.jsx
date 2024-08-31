@@ -9,7 +9,7 @@ const Hero = () => {
           animate={{ x: 0, opacity: 1 }}
           initial={{ x: -100, opacity: 0 }}
           transition={{ type: "tween", duration: 0.5 }}
-          className="md:pb-14 text-5xl font-thin tracking-tight  lg:text-8xl pb-6 place"
+          className="md:pb-10 text-5xl font-thin tracking-tight  lg:text-7xl pb-6"
         >
           Saran M
         </motion.h1>
@@ -27,7 +27,7 @@ const Hero = () => {
           animate={{ y: 0, opacity: 1 }}
           initial={{ y: -100, opacity: 0 }}
           transition={{ type: "tween", duration: 0.5, delay: 0.5 }}
-          className=" lg:text-3xl text-2xl tracking-wider  font-light mt-16"
+          className=" lg:text-2xl text-2xl tracking-wider  font-light mt-16"
         >
           ABOUT ME
         </motion.div>

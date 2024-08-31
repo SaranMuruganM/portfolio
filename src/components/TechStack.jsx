@@ -9,7 +9,7 @@ const TechStack = () => {
 
   return (
     <div className="grid grid-rows-2 justify-center text-center font-light text-white">
-      <h1 className="self-center text-3xl lg:text-4xl">Tech Stack</h1>
+      <h1 className="self-center text-3xl lg:text-3xl">Tech Stack</h1>
       <div className="*:tech-stack-styling-inverse mt-4 flex justify-center gap-3 md:gap-8 *:p-2 *:backdrop-blur-lg">
         <FaReact size={70} color="#3b82f6" />
 

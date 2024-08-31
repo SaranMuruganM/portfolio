@@ -22,10 +22,10 @@ const App = () => {
         }}
         src={cpu}
         alt="Animated CPU graphic"  
-        className="-z-2"
+        className="-z-2 w-[200px] h-[150px]"
         />
         </div>
-      <div className="container z-10 mx-auto min-h-[100vh] md:px-8 px-4">
+      <div className="container z-10 mx-auto min-h-[100vh] md:px-10 px-4">
         <NavBar />
         <Hero />
         <TechStack />
