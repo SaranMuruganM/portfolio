@@ -5,7 +5,7 @@ import Resume from '../assets/saranm.pdf'
 const NavBar = () => {
   return (
     <div className="flex items-center justify-between py-6 text-white">
-      <h1 className="md:text-lg md:tracking-wide">SARAN M</h1>
+      <h1 className="md:text-lg md:tracking-wide">&lt;SARAN M&gt;</h1>
       <div className="flex items-center gap-3 md:gap-5 md:tracking-wide">
         <div className="hidden items-center md:flex md:gap-5 md:text-lg md:tracking-wide">
           <a href="https://github.com/SaranMuruganM" target={"_blank"}>

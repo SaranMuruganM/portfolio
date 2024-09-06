@@ -8,18 +8,32 @@ import { motion, useAnimation } from "framer-motion";
 const TechStack = () => {
 
   return (
-    <div className="grid grid-rows-2 justify-center text-center font-light text-white">
-      <h1 className="self-center text-3xl lg:text-3xl">Tech Stack</h1>
-      <div className="*:tech-stack-styling-inverse mt-4 flex justify-center gap-3 md:gap-8 *:p-2 *:backdrop-blur-lg">
-        <FaReact size={70} color="#3b82f6" />
+    <div className="grid grid-rows-3 justify-center text-center font-light text-white">
+      <h1 className="self-center text-2xl lg:text-3xl">&lt;Tech Stack&gt;</h1>
+      <div className="*:tech-stack-styling-inverse mt-4 flex justify-center gap-6 *:p-2 *:backdrop-blur-lg md:gap-8">
+        <FaReact
+          color="#3b82f6"
+          className="h-16 w-16 md:h-[70px] md:w-[70px]"
+        />
 
-        <IoLogoNodejs size={70} color="#417e38" />
+        <IoLogoNodejs
+          color="#417e38"
+          className="h-16 w-16 md:h-[70px] md:w-[70px]"
+        />
 
-        <SiMongodb size={70} color="#00ed64" />
+        <SiMongodb
+          color="#00ed64"
+          className="h-16 w-16 md:h-[70px] md:w-[70px]"
+        />
 
-          <IoLogoJavascript size={70} color="#f0db4f" />
-  
+        <IoLogoJavascript
+          color="#f0db4f"
+          className="h-16 w-16 md:h-[70px] md:w-[70px]"
+        />
       </div>
+      <h1 className="mt-6 self-center text-2xl lg:text-3xl">
+        &lt;/Tech Stack&gt;
+      </h1>
     </div>
   );
 };

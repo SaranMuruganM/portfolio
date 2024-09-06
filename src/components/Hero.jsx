@@ -27,15 +27,23 @@ const Hero = () => {
           animate={{ y: 0, opacity: 1 }}
           initial={{ y: -100, opacity: 0 }}
           transition={{ type: "tween", duration: 0.5, delay: 0.5 }}
-          className=" lg:text-2xl text-2xl tracking-wider  font-light mt-16"
+          className=" lg:text-2xl text-xl tracking-wider  font-light mt-16"
         >
-          ABOUT ME
+          &lt;ABOUT ME&gt;
         </motion.div>
         <HeroAbout aname={"Fresher"} />
         <HeroAbout aname={"MERN Stack"} />
         <HeroAbout aname={" 3 - Frontend Projects"} />
         <HeroAbout aname={"1 - Full Stack Project"} />
         <HeroAbout aname={"Built REST API's"} />
+        <motion.div
+          animate={{ y: 0, opacity: 1 }}
+          initial={{ y: -100, opacity: 0 }}
+          transition={{ type: "tween", duration: 0.5, delay: 0.5 }}
+          className=" lg:text-2xl text-xl tracking-wider  font-light mt-6"
+        >
+          &lt;/ABOUT ME&gt;
+        </motion.div>
       </div>
     </div>
   );

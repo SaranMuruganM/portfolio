@@ -8,24 +8,24 @@ import cpu from "./assets/cpuformatted.png";
 
 const App = () => {
   return (
-    <div className="bg-black grid">
-      <div className="fixed min-h-dvh min-w-[100vw] flex items-center justify-center z-0" >
-
-      <motion.img
-        initial={{ y: 8 }}
-        animate={{ y: -8 }}
-        transition={{
-          repeat: Infinity,
-          repeatType: "reverse",
-          duration: 2,
-          ease: "linear",
-        }}
-        src={cpu}
-        alt="Animated CPU graphic"  
-        className="-z-2 w-[200px] h-[150px]"
+    <div className="grid bg-black">
+      <div className="fixed left-0 top-0 z-0 flex min-h-dvh min-w-[100vw] items-center justify-center">
+        <motion.img
+          initial={{ y: 8 }}
+          animate={{ y: -8 }}
+          transition={{
+            repeat: Infinity,
+            repeatType: "reverse",
+            duration: 2,
+            ease: "linear",
+          }}
+          src={cpu}
+          alt="Animated CPU graphic"
+          className="h-[100px] w-[150px] sm:h-[80px] sm:w-[120px] md:h-[150px] md:w-[200px]"
         />
-        </div>
-      <div className="container z-10 mx-auto min-h-[100vh] md:px-10 px-4">
+      </div>
+
+      <div className="container z-10 mx-auto min-h-dvh px-4 lg:px-10">
         <NavBar />
         <Hero />
         <TechStack />
