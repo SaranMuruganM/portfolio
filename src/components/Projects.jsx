@@ -3,25 +3,9 @@ import { projectHero } from "../assets/projectHero";
 import cpu from '../assets/cpu.png'
 
 const Projects = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [showGif, setShowGif] = useState(false);
-
-  const handleMouseMove = (e) => {
-    setMousePosition({ x: e.clientX, y: e.clientY });
-  };
-
-  const handleMouseEnter = () => {
-    setShowGif(false);  //set it to true after next update
-  };
-
-  const handleMouseLeave = () => {
-    setShowGif(false);
-  };
-
   return (
     <div
       className="mb-16 mt-[20vh] p-4 text-white lg:p-4"
-      onMouseMove={handleMouseMove}
     >
       <h1 className="mb-10 text-center text-2xl font-light lg:text-3xl">
         &lt; Projects &gt;
@@ -38,8 +22,7 @@ const Projects = () => {
             src={project.img}
             alt={project.name}
             className="h-full w-full"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+        
           />
           <div className="grid gap-4">
             <h1 className="text-xl font-bold tracking-wider">{project.name}</h1>
@@ -57,21 +40,6 @@ const Projects = () => {
           </div>
         </a>
       ))}
-      {showGif && (
-        <img
-          src={cpu}
-          alt="hover effect"
-          style={{
-            position: "fixed",
-            top: mousePosition.y , // Offset the position slightly
-            left: mousePosition.x -80,
-            pointerEvents: "none",
-            width: "200px", // Adjust size as needed
-            height: "150px",
-            zIndex: 9999,
-          }}
-        />
-      )}
       <h1 className="mt-10 text-center text-2xl font-light lg:text-3xl">
         &lt;/Projects&gt;
       </h1>

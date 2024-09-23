@@ -9,7 +9,7 @@ import cpu from "./assets/cpuformatted.png";
 const App = () => {
   return (
     <div className="grid bg-black">
-      <div className="fixed left-0 top-0 z-0 flex min-h-dvh min-w-[100vw] items-center justify-center">
+      <div className="fixed left-0 top-0 z-0 flex min-h-lvh min-w-[100vw] items-center justify-center">
         <motion.img
           initial={{ y: 8 }}
           animate={{ y: -8 }}
@@ -21,7 +21,7 @@ const App = () => {
           }}
           src={cpu}
           alt="Animated CPU graphic"
-          className="h-[100px] w-[150px] sm:h-[80px] sm:w-[120px] md:h-[150px] md:w-[200px]"
+          className="lg:h-[100px] lg:w-[150px] sm:h-[80px] sm:w-[120px] md:h-[150px] md:w-[20px] h-[100px]"
         />
       </div>
 
