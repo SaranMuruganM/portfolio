@@ -1,7 +1,7 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import Resume from '../assets/saranm.pdf'
+import Resume from '../assets/Saran M.pdf'
 const NavBar = () => {
   return (
     <div className="flex items-center justify-between py-6 text-white">
