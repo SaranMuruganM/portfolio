@@ -11,11 +11,11 @@ const Projects = () => {
         <h1 className="flex-grow text-center text-2xl font-light lg:text-3xl">
           &lt; Projects &gt;
         </h1>
-        <button onClick={() => isGrid(!grid)} className="">
+        <button onClick={() => isGrid(!grid)} className="hidden lg:block">
           {grid ? <IoIosList size={25} /> : <IoGridOutline size={25} />}
         </button>
       </div>
-      <div className={`grid ${grid && "lg:grid-cols-3 grid-cols-2 gap-5"}`}>
+      <div className={`grid ${grid && "lg:grid-cols-3 lg:gap-5"}`}>
         {projectHero.map((project) => (
           <a
             key={project.id}
