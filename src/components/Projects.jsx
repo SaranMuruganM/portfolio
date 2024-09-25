@@ -15,7 +15,7 @@ const Projects = () => {
           {grid ? <IoIosList size={25} /> : <IoGridOutline size={25} />}
         </button>
       </div>
-      <div className={`grid ${grid && "grid-cols-3 gap-5"}`}>
+      <div className={`grid ${grid && "lg:grid-cols-3 grid-cols-2 gap-5"}`}>
         {projectHero.map((project) => (
           <a
             key={project.id}
