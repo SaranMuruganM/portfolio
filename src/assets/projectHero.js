@@ -2,9 +2,20 @@ import jobifyThumb from '../assets/jobifyLanding.png'
 import bloomDaleThumb from "../assets/bloomDale.png"
 import freeStore from '../assets/freeStore.png'
 import shopFusion from '../assets/shopfusion.png'
+import civiconnect from '../assets/civiconnect.png'
 export const projectHero = [
   {
     id: 1,
+    name: "CiviConnect",
+    img: civiconnect, 
+    description:
+      "Civi Connect is a centralized platform designed to enhance community engagement by enabling residents to report local issues such as water shortages, sanitation concerns, and infrastructure problems. It uses geo-referenced data to plot issues on an interactive map, offering real-time visibility for both residents and local authorities.",
+    techStack: ["React", "NodeJS", "Express JS", "Mongo DB", "Leaflet.js", "Tailwind"],
+    url: "https://civiconnect.onrender.com/", 
+  }
+  ,
+  {
+    id: 2,
     name: "Jobify",
     img: jobifyThumb,
     description:
@@ -13,7 +24,7 @@ export const projectHero = [
     url: "https://jobify-7ckj.onrender.com/",
   },
   {
-    id: 2,
+    id: 3,
     name: "FreeStore Rest API",
     img: freeStore,
     description:
@@ -22,7 +33,7 @@ export const projectHero = [
     url: "https://freestore-rest-api.onrender.com/",
   },
   {
-    id: 3,
+    id: 4,
     name: "Shop Fusion",
     img: shopFusion,
     description:
@@ -31,7 +42,7 @@ export const projectHero = [
     url: "https://shopfusionv1.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     name: "BloomDale",
     img: bloomDaleThumb,
     description:

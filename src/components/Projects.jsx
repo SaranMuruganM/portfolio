@@ -27,7 +27,7 @@ const Projects = () => {
             <img
               src={project.img}
               alt={project.name}
-              className="h-full w-full"
+              className="max-h-full min-h-[200px] w-full"
             />
             <div className="grid gap-4">
               <h1 className="text-xl font-bold tracking-wider">
